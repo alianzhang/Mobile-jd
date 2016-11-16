@@ -1,0 +1,361 @@
+body {
+  background-color: #eeeeee;
+}
+.jd-layout {
+  width: 100%;
+  max-width: 640px;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+/*头部*/
+.jd-header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  z-index: 999;
+  height: 40px;
+}
+.jd-header .header-in {
+  width: 100%;
+  max-width: 640px;
+  min-width: 300px;
+  height: 40px;
+  background-color: rgba(201, 21, 35, 0);
+  margin: 0 auto;
+  padding-left: 75px;
+  padding-right: 50px;
+  position: relative;
+}
+.jd-header .header-in .icon-logo {
+  position: absolute;
+  width: 60px;
+  height: 36px;
+  top: 2px;
+  left: 10px;
+  background: url(../images/sprites.png) no-repeat 0 -103px;
+  background-size: 200px 200px ;
+}
+.jd-header .header-in .login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+}
+.jd-header .header-in form {
+  width: 100%;
+  height: 40px;
+  padding-top: 5px;
+  position: relative;
+}
+.jd-header .header-in form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 30px;
+}
+.jd-header .header-in form .icon-search {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../images/sprites.png) no-repeat -60px -109px;
+  background-size: 200px 200px ;
+  left: 5px;
+  top: 10px;
+}
+/*banner*/
+.jd-banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.jd-banner .imgBox {
+  width: 1000%;
+  transform: translateX(-10%);
+}
+.jd-banner .imgBox li {
+  float: left;
+  width: 10%;
+}
+.jd-banner .imgBox li img {
+  width: 100%;
+  display: block;
+}
+.jd-banner .points {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translate(-50%);
+}
+.jd-banner .points li {
+  float: left;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 6px;
+}
+.jd-banner .points li:last-child {
+  margin-right: 0;
+}
+.jd-banner .points li.active {
+  background-color: #ffffff;
+}
+/*导航部分*/
+.jd-nav {
+  padding: 10px 0;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+.jd-nav ul li {
+  margin-top: 10px;
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.jd-nav ul li a {
+  display: block;
+}
+.jd-nav ul li a img {
+  width: 40px;
+}
+.jd-nav ul li a p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.jd-nav .buy {
+  width: 100%;
+}
+.jd-nav .buy .jd-buy {
+  width: 100%;
+}
+.jd-nav .buy .jd-buy a {
+  width: 100%;
+  display: block;
+}
+.jd-nav .buy .jd-buy a img {
+  width: 100%;
+  display: block;
+}
+/*新用户*/
+.newuser {
+  border: 1px solid #cccccc;
+  position: relative;
+  height: 100%;
+}
+.newuser .new-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.newuser .new-left {
+  width: 50%;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+.newuser .new-left .new-lf {
+  display: block;
+}
+.newuser .new-left .new-lf img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.newuser .new-right {
+  width: 50%;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+.newuser .new-right .new-rt {
+  display: block;
+}
+.newuser .new-right .new-rt img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.newuser .new-right .new-rb {
+  display: block;
+}
+.newuser .new-right .new-rb img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+/*商品模块*/
+.jd-product {
+  padding: 10px;
+}
+.jd-product .product-in {
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 1px #ccc;
+}
+.jd-product .product-in .product-title {
+  height: 32px;
+  border-bottom: 1px solid #cccccc;
+}
+.jd-product .product-in .product-title h3 {
+  line-height: 32px;
+  font-weight: normal;
+  font-size: 14px;
+  padding-left: 20px;
+  position: relative;
+}
+.jd-product .product-in .product-title h3::before {
+  content: "";
+  width: 2px;
+  position: absolute;
+  height: 12px;
+  left: 9px;
+  top: 10px;
+  background-color: orangered;
+}
+.jd-product .product-in .product-content a {
+  width: 50%;
+  display: block;
+}
+.jd-product .product-in .product-content a img {
+  width: 100%;
+  display: block;
+}
+.jd-product .sk .product-title {
+  border-bottom: none;
+  padding: 8px 8px  0 8px;
+}
+.jd-product .sk .product-title .sk-icon {
+  width: 16px;
+  height: 20px;
+  background: url("../images/seckill-icon.png") no-repeat;
+  background-size: 16px 20px;
+}
+.jd-product .sk .product-title .sk-title {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.jd-product .sk .product-title .sk-time {
+  padding-top: 3px;
+}
+.jd-product .sk .product-title .sk-time span {
+  float: left;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  background-color: #000;
+  color: #ffffff;
+  margin-right: 5px;
+  text-align: center;
+}
+.jd-product .sk .product-title .sk-time span:nth-child(3n) {
+  background-color: #fff;
+  color: #333333;
+  width: 10px;
+}
+.jd-product .sk .product-content {
+  padding-bottom: 10px;
+}
+.jd-product .sk .product-content ul li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.jd-product .sk .product-content ul li:nth-child(2) a {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+.jd-product .sk .product-content ul li a {
+  width: 100%;
+  display: block;
+}
+.jd-product .sk .product-content ul li a img {
+  width: 64%;
+  display: inline-block;
+}
+.jd-product .sk .product-content ul li p {
+  font-size: 12px;
+  color: #666666;
+}
+.jd-product .sk .product-content ul li p:nth-child(2) {
+  color: red;
+}
+.jd-product .sk .product-content ul li p:nth-child(3) {
+  text-decoration: line-through;
+}
+.jd-product .carmer .product-content {
+  width: 100%;
+}
+.jd-product .carmer .product-content a {
+  width: 100%;
+  display: block;
+}
+.jd-product .carmer .product-content a img {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+/*jd-footer*/
+.jd-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 44px;
+  background-color: #fff;
+}
+.jd-footer .footer-in {
+  width: 100%;
+  max-width: 640px;
+  min-width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+.jd-footer .footer-in ul li {
+  float: left;
+  width: 25%;
+}
+.jd-footer .footer-in ul li a {
+  display: block;
+  height: 44px;
+}
+.jd-footer .footer-in ul li a img {
+  width: 57px;
+  height: 44px;
+  display: block;
+  margin: 0 auto;
+}
+/*红包*/
+.jd-redbag {
+  position: fixed;
+  right: -35px;
+  bottom: 150px;
+}
+.jd-redbag a span {
+  width: 78px;
+  height: 78px;
+  display: block;
+  background: url("../images/redbag.png") no-repeat;
+  -webkit-background-size: 78px 78px;
+  background-size: 78px 78px;
+}
+.to-top {
+  position: fixed;
+  right: 0;
+  bottom: 75px;
+}
+.to-top a {
+  width: 35px;
+  height: 35px;
+  display: block;
+  background: url("../images/to-top.png") no-repeat;
+  -webkit-background-size: 35px 35px ;
+  background-size: 35px 35px ;
+}

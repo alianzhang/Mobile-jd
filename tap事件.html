@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <style>
+        .box{
+            height: 150px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+//        封装tap事件
+        var ismove=false;
+        var startTime=0;
+        var box=document.querySelector(".box");
+        box.addEventListener("touchstart", function () {
+//            记录开始时间
+            startTime=Date.now();
+//            得到的是时间戳
+            console.log(startTime);
+
+        })
+        box.addEventListener("touchmove", function () {
+            ismove=true;
+            console.log("滑动事件");
+        })
+        box.addEventListener("touchend", function () {
+//            判断用户的操作是否符合点击事件
+            console.log(Date.now() - startTime);
+            if(!ismove&&Date.now()-startTime<150){
+                console.log("tap事件触发");
+            }
+            ismove=false;
+            startTime=0;
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+@jdc:#d8505c;
+body{
+  background-color: #eeeeee;
+}
+.jd-layout{
+  width: 100%;
+  max-width: 640px;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+/*头部*/
+.jd-header{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  z-index: 999;
+  height: 40px;
+  .header-in{
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    height: 40px;
+    background-color: rgba(201,21,35,0);
+    margin: 0 auto;
+    padding-left: 75px;
+    padding-right: 50px;
+    position: relative;
+    .icon-logo{
+      position: absolute;
+      width: 60px;
+      height: 36px;
+      top: 2px;
+      left: 10px;
+      background: url(../images/sprites.png) no-repeat 0 -103px ;
+      background-size:200px 200px ;
+    }
+    .login{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      color: #ffffff;
+    }
+    form{
+      width: 100%;
+      height: 40px;
+      padding-top: 5px;
+      position: relative;
+      input{
+        width: 100%;
+        height: 30px;
+        border-radius: 15px;
+        padding-left: 30px;
+      }
+      .icon-search{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: url(../images/sprites.png) no-repeat -60px -109px ;
+        background-size: 200px 200px ;
+        left: 5px;
+        top: 10px;
+      }
+    }
+  }
+}
+/*banner*/
+.jd-banner{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  .imgBox{
+    width: 1000%;
+    transform: translateX(-10%);
+    li{
+      float: left;
+      width: 10%;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  .points{
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%);
+    li{
+      float: left;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      margin-right: 6px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    li.active{
+      background-color: #ffffff;
+    }
+  }
+}
+/*导航部分*/
+.jd-nav{
+  padding: 10px 0;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  ul{
+    li{
+      margin-top: 10px;
+      float: left;
+      width: 20%;
+      text-align: center;
+      a{
+        display: block;
+        img{
+          width: 40px;
+        }
+        p{
+          font-size:14px;
+          margin:10px 0;
+        }
+      }
+    }
+  }
+  .buy{
+    width: 100%;
+    .jd-buy{
+      width: 100%;
+      a{
+        width: 100%;
+        display: block;
+        img{
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}
+/*新用户*/
+.newuser{
+    border: 1px solid #cccccc;
+    position: relative;
+    height: 100%;
+    .new-bg{
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .new-left{
+      width: 50%;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      .new-lf{
+        display: block;
+        img{
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+        }
+      }
+    }
+    .new-right{
+      width: 50%;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      .new-rt{
+        display: block;
+        img{
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+        }
+      }
+      .new-rb{
+        display: block;
+        img{
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+        }
+      }
+    }
+  }
+/*商品模块*/
+.jd-product{
+  padding: 10px;
+  .product-in{
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px #ccc;
+    .product-title{
+      height: 32px;
+      border-bottom: 1px solid #cccccc;
+      h3{
+        line-height: 32px;
+        font-weight: normal;
+        font-size: 14px;
+        padding-left: 20px;
+        position: relative;
+        &::before{
+          content:"";
+          width: 2px;
+          position: absolute;
+          height: 12px;
+          left: 9px;
+          top: 10px;
+          background-color: orangered;
+      }
+      }
+    }
+    .product-content {
+      a{
+        width: 50%;
+        display: block;
+        img{
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+  .sk{
+    .product-title{
+      border-bottom: none;
+      padding: 8px 8px  0 8px;
+
+    .sk-icon{
+      width: 16px;
+      height: 20px;
+      background: url("../images/seckill-icon.png") no-repeat;
+      background-size: 16px 20px;
+    }
+      .sk-title{
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .sk-time{
+        padding-top: 3px;
+        span{
+          float: left;
+          width: 15px;
+          height: 15px;
+          line-height: 15px;
+          background-color: #000;
+          color: #ffffff;
+          margin-right: 5px;
+          text-align: center;
+          &:nth-child(3n){
+            background-color: #fff;
+            color: #333333;
+            width: 10px;
+          }
+        }
+      }
+    }
+    .product-content{
+      padding-bottom: 10px;
+      ul{
+        li{
+          float: left;
+          width: 33.33%;
+          text-align: center;
+          &:nth-child(2) a{
+            border-left:1px solid #cccccc;
+            border-right:1px solid #cccccc;
+          }
+          a{
+            width: 100%;
+            display: block;
+            img{
+              width: 64%;
+              display: inline-block;
+            }
+          }
+          p{
+            font-size: 12px;
+            color:#666666;
+            &:nth-child(2){
+              color:red;
+            }
+            &:nth-child(3){
+              text-decoration: line-through;
+            }
+          }
+        }
+      }
+    }
+  }
+  .carmer{
+    .product-content{
+      width: 100%;
+      a{
+        width: 100%;
+        display: block;
+        img{
+          width: 100%;
+          height: 250px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+/*jd-footer*/
+.jd-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 44px;
+  background-color: #fff;
+  .footer-in{
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    ul{
+      li{
+        float: left;
+        width: 25%;
+        a{
+          display: block;
+          height: 44px;
+          img{
+            width: 57px;
+            height: 44px;
+            display: block;
+            margin:0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+/*红包*/
+.jd-redbag{
+  position: fixed;
+  right: -35px;
+  bottom: 150px;
+  a{
+    span{
+      width: 78px;
+      height: 78px;
+      display: block;
+      background: url("../images/redbag.png") no-repeat;
+      -webkit-background-size: 78px 78px;
+      background-size: 78px 78px;
+    }
+  }
+}
+.to-top{
+  position: fixed;
+  right: 0;
+  bottom: 75px;
+  a{
+    width: 35px;
+    height: 35px;
+    display: block;
+    background: url("../images/to-top.png") no-repeat;
+    -webkit-background-size: 35px 35px ;
+    background-size: 35px 35px ;
+  }
+}

@@ -1,0 +1,64 @@
+/*基本样式*/
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    outline: none;
+    border:none;
+    /*去除表单上在移动设备上的阴影效果*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*公共样式*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+
+}
+.b-l{
+    border-left: 1px solid #cccccc;
+}
+.b-r{
+    border-right: 1px solid #cccccc;
+}
+.b-t{
+    border-top: 1px solid #cccccc;
+}
+.b-b{
+    border-bottom: 1px solid #cccccc;
+}
+/*a[class^='icon-'],span[class^='icon-']{*/
+    /*background:url(../images/sprites.png) no-repeat;*/
+    /*background-size: 200px 200px;*/
+/*}*/
